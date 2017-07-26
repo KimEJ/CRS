@@ -36,7 +36,7 @@ course
 
 1. 학생 정보 Table : member_db
  * 학번 : student_number
- *  : password
+ * 비밀번호 : password
 
 2. 예약정보 Table : reservation_db
  * 시작 일, 시 : start_time
