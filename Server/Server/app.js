@@ -2,8 +2,8 @@ const Hapi = require('hapi');
 
 const server = new Hapi.Server();
 server.connection({
-    host: 'localhost',
-    port: 5000
+    host: '192.168.43.200',
+    port: 8080
 });
 
 server.register({
@@ -11,8 +11,8 @@ server.register({
     options: {
         host: 'localhost',
         database: 'CRS',
-        user: 'your-database-username',    // set your database username
-        password: 'your-database-password'    // set your database password
+        user: 'root',    // set your database username
+        password: 'Djwlsznzld5090'    // set your database password
     }
 
 }, (error) => {

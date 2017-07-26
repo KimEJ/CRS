@@ -6,10 +6,8 @@ module.exports = (connection) => {
 
                 noteHandle.findAll((result) => {
                     let time = result.map((item) => {
-                        let { start_time, stop_time, location, student_number } = item;
-                        return { start_time, stop_time, location, student_number };
+                        reply(item).code(200);
                     });
-                    reply(notes).code(200);
                 });
         } catch (e) {
             reply(null).code(500);
