@@ -34,12 +34,13 @@ course
 
 ## DB 내용
 
-1. 학생 정보 Table
- * 학번
- * 고유번호
+1. 학생 정보 Table : member_tb
+ * 학번 : student_number
+ * 비밀번호 : password
+ * 카드번호 : card_number
 
-2. 예약정보 Table
- * 시작 일, 시
- * 종료 일, 시
- * 위치
- * 신청자 학번
+2. 예약정보 Table : reservation_tb
+ * 시작 일, 시 : start_time
+ * 종료 일, 시 : stop_time
+ * 위치 : location
+ * 신청자 학번 : student_number
