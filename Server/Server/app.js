@@ -21,11 +21,15 @@ server.register({
     }
 });
 
-let ReservationRoute = require('./lib/routes/reservation-route');
-reservationRoute(server);
+let timeRoute = require('./lib/routes/time');
+timeRoute(server);
 
-let CertificationRoute = require('./lib/routes/certification-route');
-certificationRoute(server);
+let confirmRoute = require('./lib/routes/confirm');
+confirmRoute(server);
+
+let accountRoute = require('./lib/routes/account');
+accountRoute(server);
+
 
 server.start(() => {
     console.log(`server was started at: ${server.info.uri}`);
