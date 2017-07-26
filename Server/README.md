@@ -13,16 +13,25 @@
 -----------------------------------
 
 POST 	/accounts/signin		//로그인
+
 	payload : student_number, password
 
+
 DELETE 	/accounts/signout	//로그아웃
+
 	payload : NULL
+
 
 GET		/confirm/{card_number}	//예약 확인
+
 	payload : card_number, location
 
+
 GET 	/time/view				//예약 상태 확인
+
 	payload : NULL
 
+
 POST 	/time/add				//예약
+
 	payload : start_time, stop_time, location, student_number

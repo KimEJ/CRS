@@ -10,7 +10,7 @@ module.exports = (connection) => {
                     let { student_number, stop_time } = item
 
                     confirmHandle.reservation_dbFind(student_number, location, (result) => {
-                          if (result.length == 1) {
+                        if (result.length == 1) {
                             let time2 = result.map((item2) => {
                                 let { start_time } = item2
                                 let d = new Date();
@@ -18,16 +18,15 @@ module.exports = (connection) => {
                                   reply(stop_time).code(200);
                                 }
                             });
-                          }
-                          else {
-                              reply(null).code(404);
-                          }
-                        });
+                        }
+                        else {
+                            reply(null).code(404);
+                        }
                     });
                 });
             });
         } catch (e) {
-          reply(null).code(500);
+            reply(null).code(500);
         }
     };
 

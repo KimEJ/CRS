@@ -4,7 +4,7 @@ module.exports = (server) => {
 
         server.route({
             method: 'GET',
-            path: '/confirm/{card_number}',
+            path: '/confirm/{card_number}x{location}',
             handler: confirmAction.check
         });
     });
